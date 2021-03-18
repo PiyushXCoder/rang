@@ -30,7 +30,7 @@ fn main() {
 }
 
 fn display(app: &Application) {
-    let builder = gtk::Builder::from_file("ui.glade");
+    let builder = gtk::Builder::from_file(find_ui_file());
 
     let win = builder.get_object::<gtk::Window>("win").expect("Resource file missing!");
     win.set_application(Some(app));
@@ -56,4 +56,13 @@ fn display(app: &Application) {
             _ => Box::new(|_| {None})
         }
     });
+}
+
+fn find_ui_file() -> String{
+    let ui_file = std::env::var("RANG_UI_FILE");
+    match ui_file {
+        Ok(val) => val, 
+        Err(_) => std::env::current_exe().unwrap().parent().unwrap()
+            .join("ui.glade").to_str().unwrap().to_owned()
+    }             
 }

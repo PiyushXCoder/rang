@@ -7,7 +7,7 @@
     <property name="type-hint">dialog</property>
     <property name="program-name">Rang</property>
     <property name="comments" translatable="yes">Color Chooser</property>
-    <property name="authors">PiyushXCoder (https://gitlab.com/PiyushXCoder)</property>
+    <property name="authors">https://gitlab.com/PiyushXCoder</property>
     <property name="logo-icon-name">gtk-select-color</property>
     <property name="license-type">gpl-3-0</property>
     <signal name="close" handler="about_close1" swapped="no"/>
