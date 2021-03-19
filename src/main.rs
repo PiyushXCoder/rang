@@ -19,7 +19,7 @@ use glib::clone;
 use std::env::args;
 
 fn main() {
-    let app = gtk::Application::new(Some("sng.tarangm"), Default::default())
+    let app = gtk::Application::new(Some("sng.rang"), Default::default())
     .expect("Failed to initiate gtk");
 
     app.connect_activate(|app| {
