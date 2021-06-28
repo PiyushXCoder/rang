@@ -1,11 +1,11 @@
 [package]
 name = "rang"
-version = "0.1.0"
+version = "0.1.1"
 description = "Just another colour chooser"
 authors = ["PiyushXCoder <piyush.raj.kit@gmail.com>"]
 license = "GPL-3.0-only"
 readme = "README.md"
-repository = "https://github.com/PiyushXCoder/Rasp-Manager"
+repository = "https://github.com/PiyushXCoder/rang"
 keywords = ["color", "color-chooser", "color-picker", "gtk"]
 edition = "2018"
 

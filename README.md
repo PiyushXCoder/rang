@@ -3,7 +3,7 @@
 A simple color chooser made with GTK
 
 ## Interface
-![1](Screenshot.png)
+![Alt text](Screenshot.png)
 
 # LICENSE
 This program is free software: you can redistribute it and/or modify
